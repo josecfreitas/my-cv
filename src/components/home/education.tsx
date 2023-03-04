@@ -1,12 +1,13 @@
-import { Box, Heading, List, ListIcon, ListItem } from "@chakra-ui/react";
-import Link from "next/link";
+import { List } from "@chakra-ui/react";
 import { CustomListItem } from "../custom-list-item";
+import { Section } from "../section";
+import { SectionTitle } from "../section-title";
 import { SvgIconEducation1 } from "../svg/svg-icon-education1";
 import { SvgIconEducation2 } from "../svg/svg-icon-education2";
 
 export const Education = () => (
-  <Box as="section">
-    <Heading as="h2">Education</Heading>
+  <Section>
+    <SectionTitle>Education</SectionTitle>
 
     <List>
       <CustomListItem
@@ -38,5 +39,5 @@ export const Education = () => (
         when="2011 - 2012"
       />
     </List>
-  </Box>
+  </Section>
 );

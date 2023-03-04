@@ -1,6 +1,6 @@
-import { Box, List, ListIcon, ListItem } from "@chakra-ui/react";
-import Link from "next/link";
+import { List } from "@chakra-ui/react";
 import { CustomListItem } from "../custom-list-item";
+import { Section } from "../section";
 import { SvgIconAlura } from "../svg/svg-icon-alura";
 import { SvgIconEmail } from "../svg/svg-icon-email";
 import { SvgIconGithub } from "../svg/svg-icon-github";
@@ -9,7 +9,7 @@ import { SvgIconSite } from "../svg/svg-icon-site";
 import { SvgIconWhatsapp } from "../svg/svg-icon-whatsapp";
 
 export const Links = () => (
-  <Box as="nav">
+  <Section as="nav">
     <List>
       <CustomListItem
         icon={SvgIconEmail}
@@ -42,5 +42,5 @@ export const Links = () => (
         href="https://josecarlos.tec.br"
       />
     </List>
-  </Box>
+  </Section>
 );

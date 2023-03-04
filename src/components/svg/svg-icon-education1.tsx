@@ -1,8 +1,8 @@
-import { Icon } from "@chakra-ui/react";
+import { Icon, IconProps } from "@chakra-ui/react";
 
-export const SvgIconEducation1 = () => {
+export const SvgIconEducation1 = (props: IconProps) => {
   return (
-    <Icon boxSize={4} viewBox="0 0 32 32">
+    <Icon boxSize={4} viewBox="0 0 32 32" {...props}>
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
         <title>education1</title>
         <g id="Camada_2" data-name="Camada 2">

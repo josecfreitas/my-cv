@@ -1,8 +1,10 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
+import { Section } from "../section";
+import { SectionTitle } from "../section-title";
 
 export const AboutMe = () => (
-  <Box as="section">
-    <Heading as="h2">About me</Heading>
+  <Section>
+    <SectionTitle>About me</SectionTitle>
     <Text>
       Greetings! My name is José Carlos de Freitas, and I'm a Brazilian
       programmer with over a decade of experience in computer science. I began
@@ -28,5 +30,5 @@ export const AboutMe = () => (
       Don't hesitate to get in touch, and I look forward to the opportunity to
       discuss how I can contribute to your team.
     </Text>
-  </Box>
+  </Section>
 );

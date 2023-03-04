@@ -1,8 +1,9 @@
-import { ListIcon, ListItem } from "@chakra-ui/react";
+import { Box, Flex, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import Link from "next/link";
 
 interface CustomListItemProps {
   icon?: any;
+
   title: string;
 
   label?: string;
@@ -16,30 +17,47 @@ export const CustomListItem = ({
   label,
   href,
   when,
-}: CustomListItemProps) => (
-  <ListItem>
-    {icon && <ListIcon as={icon} />}
+}: CustomListItemProps) => {
+  const Title = () => <Text fontWeight="medium">{title}</Text>;
+  const Label = () => (
+    <Text fontSize="xs" mt={1}>
+      {label}
+    </Text>
+  );
 
-    {href && !label ? (
-      <Link href={href} target="_blank">
-        {title}
-      </Link>
-    ) : (
-      title
-    )}
+  return (
+    <ListItem my={3}>
+      <Flex gap={1} alignItems="center">
+        {icon && <ListIcon as={icon} boxSize={5} />}
 
-    {label && (
-      <>
-        {href ? (
-          <Link href={href} target="_blank">
-            {label}
-          </Link>
-        ) : (
-          label
+        <Box>
+          {href && !label ? (
+            <Link href={href} target="_blank">
+              <Title />
+            </Link>
+          ) : (
+            <Title />
+          )}
+
+          {label && (
+            <>
+              {href ? (
+                <Link href={href} target="_blank">
+                  <Label />
+                </Link>
+              ) : (
+                <Label />
+              )}
+            </>
+          )}
+        </Box>
+
+        {when && (
+          <Text fontSize="xs" color="gray.500" ml="auto" whiteSpace="nowrap">
+            {when}
+          </Text>
         )}
-      </>
-    )}
-
-    {when}
-  </ListItem>
-);
+      </Flex>
+    </ListItem>
+  );
+};

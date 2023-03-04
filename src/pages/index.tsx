@@ -1,5 +1,4 @@
-import { Box } from "@chakra-ui/react";
-import { Montserrat } from "next/font/google";
+import { Box, Container, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { AboutMe } from "../components/home/about-me";
 import { Education } from "../components/home/education";
@@ -8,8 +7,6 @@ import { Header } from "../components/home/header";
 import { Languages } from "../components/home/languages";
 import { Links } from "../components/home/links";
 import { Publications } from "../components/home/publications";
-
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 interface HomeProps {
   lastUpdate: string;
@@ -29,15 +26,23 @@ export default function Home({ lastUpdate }: HomeProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Box as="main" className={montserrat.className}>
+      <Box as="main">
         <Header />
 
-        <Links />
-        <Education />
-        <Publications />
-        <Languages />
+        <Container>
+          <Flex gap={8}>
+            <Box flex="0 0 300px">
+              <Links />
+              <Education />
+              <Publications />
+              <Languages />
+            </Box>
 
-        <AboutMe />
+            <Box>
+              <AboutMe />
+            </Box>
+          </Flex>
+        </Container>
 
         <Footer lastUpdate={lastUpdate} />
       </Box>

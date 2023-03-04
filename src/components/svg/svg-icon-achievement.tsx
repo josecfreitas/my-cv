@@ -1,8 +1,8 @@
-import { Icon } from "@chakra-ui/react";
+import { Icon, IconProps } from "@chakra-ui/react";
 
-export const SvgIconAchievement = () => {
+export const SvgIconAchievement = (props: IconProps) => {
   return (
-    <Icon boxSize={4} viewBox="0 0 24 21.33">
+    <Icon boxSize={4} viewBox="0 0 24 21.33" {...props}>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21.33">
         <title>achievement</title>
         <g id="Camada_2" data-name="Camada 2">

@@ -1,10 +1,12 @@
-import { Box, Heading, List } from "@chakra-ui/react";
+import { List } from "@chakra-ui/react";
 import { CustomListItem } from "../custom-list-item";
+import { Section } from "../section";
+import { SectionTitle } from "../section-title";
 import { SvgIconAchievement } from "../svg/svg-icon-achievement";
 
 export const Publications = () => (
-  <Box as="section">
-    <Heading as="h2">Publications</Heading>
+  <Section>
+    <SectionTitle>Publications</SectionTitle>
 
     <List>
       <CustomListItem
@@ -20,5 +22,5 @@ export const Publications = () => (
         href="https://www.inderscience.com/info/inarticle.php?artid=106061"
       />
     </List>
-  </Box>
+  </Section>
 );
