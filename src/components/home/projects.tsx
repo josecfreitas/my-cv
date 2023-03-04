@@ -33,7 +33,6 @@ export const Projects = () => (
           CSS, TypeScript, and PO UI.
         </Text>
       </CustomListItem>
-      labelCustomListItem title="WeHoo" href="https://wehoo.com.br" when="2020">
       <CustomListItem title="WeHoo" href="https://wehoo.com.br" when="2020">
         <Text>
           Concept, develop and maintain a platform for product indication and
@@ -64,7 +63,6 @@ export const Projects = () => (
           CSS, JavaScript, React, and Gatsby.
         </Text>
       </CustomListItem>
-      labelCustomListItem title="AllLux" href="https://alllux.ind.br" when="2020">
       <CustomListItem title="AllLux" href="https://alllux.ind.br" when="2020">
         <Text>
           Concept and develop a landing page for a light company. I worked with
@@ -115,7 +113,6 @@ export const Projects = () => (
           with HTML, CSS, JavaScript, React, and Gatsby.
         </Text>
       </CustomListItem>
-      labelCustomListItem title="WEPS" href="https://weps.com.br" when="2020">
       <CustomListItem title="WEPS" href="https://weps.com.br" when="2020">
         <Text>
           Concept, develop and maintain an app for managing digital people
@@ -193,7 +190,6 @@ export const Projects = () => (
         Hibernate/JPA, PostgreSQL, Thymeleaf, HTML, CSS, JavaScript, jQuery, and
         Bootstrap.
       </CustomListItem>
-      labelCustomListItem title="ÁreaBim" href="https://areabim.com.br" when="2017">
       <CustomListItem title="ÁreaBim" href="https://areabim.com.br" when="2017">
         Concept, develop and maintain a building management platform that shows
         information about the progress of works to customers. I worked with
