@@ -29,7 +29,7 @@ export const Education = () => (
         title="200+ Technology Courses"
         label="Alura"
         href="https://cursos.alura.com.br/user/josecfreitas"
-        when="Since 2017"
+        when="2017 - Present"
       />
       <CustomListItem
         icon={SvgIconEducation1}

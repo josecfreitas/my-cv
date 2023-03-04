@@ -1,7 +1,15 @@
-import { Box, Flex, ListIcon, ListItem, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Flex,
+  ListIcon,
+  ListItem,
+  ListItemProps,
+  Text,
+} from "@chakra-ui/react";
 import Link from "next/link";
 
-interface CustomListItemProps {
+interface CustomListItemProps extends ListItemProps {
   icon?: any;
 
   title: string;
@@ -17,6 +25,8 @@ export const CustomListItem = ({
   label,
   href,
   when,
+  children,
+  ...rest
 }: CustomListItemProps) => {
   const Title = () => <Text fontWeight="medium">{title}</Text>;
   const Label = () => (
@@ -26,7 +36,7 @@ export const CustomListItem = ({
   );
 
   return (
-    <ListItem my={3}>
+    <ListItem my={3} {...rest}>
       <Flex gap={1} alignItems="center">
         {icon && <ListIcon as={icon} boxSize={5} />}
 
@@ -58,6 +68,15 @@ export const CustomListItem = ({
           </Text>
         )}
       </Flex>
+
+      {children && (
+        <>
+          <Box fontSize="sm" mt={2}>
+            {children}
+          </Box>
+          <Divider my={4} />
+        </>
+      )}
     </ListItem>
   );
 };

@@ -1,12 +1,16 @@
 import { Box, Container, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { AboutMe } from "../components/home/about-me";
+import { Career } from "../components/home/career";
 import { Education } from "../components/home/education";
 import { Footer } from "../components/home/footer";
 import { Header } from "../components/home/header";
 import { Languages } from "../components/home/languages";
 import { Links } from "../components/home/links";
+import { OtherSkills } from "../components/home/other-skills";
+import { Projects } from "../components/home/projects";
 import { Publications } from "../components/home/publications";
+import { Skills } from "../components/home/skills";
 
 interface HomeProps {
   lastUpdate: string;
@@ -30,8 +34,8 @@ export default function Home({ lastUpdate }: HomeProps) {
         <Header />
 
         <Container>
-          <Flex gap={8}>
-            <Box flex="0 0 300px">
+          <Flex gap={{ md: 8 }} flexDir={{ base: "column", md: "row" }}>
+            <Box flex={{ md: "0 0 300px" }}>
               <Links />
               <Education />
               <Publications />
@@ -40,6 +44,10 @@ export default function Home({ lastUpdate }: HomeProps) {
 
             <Box>
               <AboutMe />
+              <Career />
+              <Skills />
+              <OtherSkills />
+              <Projects />
             </Box>
           </Flex>
         </Container>

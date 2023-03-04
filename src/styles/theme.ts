@@ -9,6 +9,11 @@ export const theme = extendTheme({
     body: montserrat.style.fontFamily,
   },
   components: {
+    Text: {
+      baseStyle: {
+        mt: ".5em",
+      },
+    },
     Container: {
       baseStyle: {
         maxW: "container.xl",
