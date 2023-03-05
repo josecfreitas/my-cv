@@ -26,8 +26,8 @@ export const Skills = () => (
         I have 2 years of experience with with NestJS and React, 3 years with
         ExpressJS and Angular2+, and 6 years with Spring Boot and jQuery.
         Additionally, I have trained in Vue, Sass, jUnit, Less, Spark,
-        WordPress, React, GatsbyJS, NextJS, Jenkins, Apache Kafka, Flutter,
-        Webpack, and Laravel, with varying levels of experience.
+        WordPress, GatsbyJS, NextJS, Jenkins, Apache Kafka, Flutter, Webpack,
+        and Laravel, with varying levels of experience.
       </CustomListItem>
       <CustomListItem title="Others">
         I have 2 years of experience with GitHub Actions, Docker, Kubernetes,
