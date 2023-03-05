@@ -228,12 +228,7 @@ export const Projects = () => (
         with Java8, Spring MVC, Hibernate/JPA, PostgreSQL, JSP, HTML, CSS,
         JavaScript, jQuery, and Bootstrap.
       </CustomListItem>
-      <CustomListItem
-        title="PLATCOL"
-        label="https://www.institucional.grupogbd.com/dicionario"
-        href="https://www.institucional.grupogbd.com/dicionario"
-        when="2016"
-      >
+      <CustomListItem title="PLATCOL" when="2016">
         Concept, develop and maintain an online platform of collocations
         dictionary. I worked with Java7, Spring MVC, Spring
         Internationalization, Hibernate/JPA, PostgreSQL, JSP, HTML, CSS,
@@ -249,45 +244,25 @@ export const Projects = () => (
         Database Group. I worked with Java7, Spring MVC, Hibernate/JPA,
         PostgreSQL, JSP, HTML, CSS, JavaScript, jQuery, and Bootstrap.
       </CustomListItem>
-      <CustomListItem
-        title="Portal GBD Lattes"
-        label="https://institucional.grupogbd.com/PortalGBD-Lattes"
-        href="https://institucional.grupogbd.com/PortalGBD-Lattes"
-        when="2015"
-      >
+      <CustomListItem title="Portal GBD Lattes" when="2015">
         Concept, develop and maintain a platform to show information of Unesp's
         scientific production, which are collected from the Lattes Platform with
         some enhancements when compared to Portal PROPe. I worked with Java7,
         Spring MVC, Hibernate/JPA, PostgreSQL, JSP, HTML, CSS, JavaScript,
         jQuery, and Bootstrap.
       </CustomListItem>
-      <CustomListItem
-        title="Portal PROPe"
-        label="http://www.gbd.sasd.ibilce.unesp.br/PortalPROPe"
-        href="http://www.gbd.sasd.ibilce.unesp.br/PortalPROPe"
-        when="2015 - 2017"
-      >
+      <CustomListItem title="Portal PROPe" when="2015 - 2017">
         Develop and maintain a platform to show information of Unesp's
         scientific production, which are collected from the Lattes Platform . I
         worked with Java7, Spring MVC, Hibernate/JPA, PostgreSQL, JSP, HTML,
         CSS, JavaScript, jQuery, and Bootstrap.
       </CustomListItem>
-      <CustomListItem
-        title="Online English Collocations Workbook"
-        label="https://www.institucional.grupogbd.com/workbook"
-        href="https://www.institucional.grupogbd.com/workbook"
-        when="2015"
-      >
+      <CustomListItem title="Online English Collocations Workbook" when="2015">
         Develop and maintain a platform to learn English collocations by playing
         games. I worked with Java7, Spring MVC, Hibernate/JPA, PostgreSQL, JSP,
         HTML, CSS, JavaScript, jQuery, and Bootstrap.
       </CustomListItem>
-      <CustomListItem
-        title="Proceedings"
-        label="https://unesp.br/anaiscongressoeducadores"
-        href="https://unesp.br/anaiscongressoeducadores"
-        when="2014"
-      >
+      <CustomListItem title="Proceedings" when="2014">
         Concept and develop a website for presenting the proceedings of the
         congress "III Congresso Nacional de Formação de Professores (CNFP) e
         XIII Congresso Estadual Paulista sobre Formação de Educadores (CEPFE)".
