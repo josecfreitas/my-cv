@@ -108,7 +108,7 @@ export const Career = () => (
       </CustomListItem>
 
       <CustomListItem
-        title="Co-founder and Software Enginner"
+        title="Co-founder and Software Engineer"
         label="3r Agência"
         href="https://agencia3r.com.br/"
         when="2016 - 2020"
