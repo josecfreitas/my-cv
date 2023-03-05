@@ -127,13 +127,13 @@ export const Career = () => (
         </Text>
       </CustomListItem>
       <CustomListItem
-        title="Technical Lead"
+        title="Tech Lead @ Database Group"
         label="UNESP - Universidade Estadual Paulista"
         href="https://www.grupogbd.com/PortalGBD/index"
         when="2016 - 2018"
       ></CustomListItem>
       <CustomListItem
-        title="Software Engineer"
+        title="Software Engineer @ Database Group"
         label="UNESP - Universidade Estadual Paulista"
         href="https://www.grupogbd.com/PortalGBD/index"
         when="2014 - 2016"
