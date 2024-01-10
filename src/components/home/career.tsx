@@ -9,54 +9,43 @@ export const Career = () => (
 
     <List>
       <CustomListItem
+        title="Senior Staff Software Engineer"
+        label="Business Insider"
+        href="https://www.businessinsider.com/"
+        when="Jan 2024 - Present"
+      ></CustomListItem>
+
+      <CustomListItem
         title="Staff Software Engineer"
-        label="Insider, Inc."
-        href="https://www.insider.com/"
-        when="2022 - Present"
+        label="Business Insider"
+        href="https://www.businessinsider.com/"
+        when="Apr 2022 - Jan 2024"
       ></CustomListItem>
       <CustomListItem
         title="Senior Software Engineer"
-        label="Insider, Inc."
-        href="https://www.insider.com/"
-        when="2021 - 2022"
+        label="Business Insider"
+        href="https://www.businessinsider.com/"
+        when="Jul 2021 - Mar 2022"
       >
         <Text>
-          As a Senior Software Engineer and Staff Software Engineer, I have been
-          a crucial part of a team that powers and supports the world's
-          most-read, most helpful, and most trusted source of service
-          journalism. My extensive experience with a wide range of technologies
-          has enabled me to make a significant contribution to the success of
-          the company.
+          As a Senior Staff Software Engineer, I have been a crucial part of a team that powers and supports the world's most-read, most helpful, and most trusted source of service journalism. My extensive experience with a wide range of technologies has enabled me to make a significant contribution to the success of the company.
         </Text>
         <Text>
-          My expertise in HTML, CSS, JavaScript, Angular, Vue, TypeScript,
-          NodeJS, ExpressJS, NestJS, Go, MongoDB, ElasticSearch, Docker,
-          Kubernetes, GitHub, and other cutting-edge technologies has enabled me
-          to design and develop highly scalable and reliable systems. I have
-          played a key role in building and maintaining a robust and flexible
-          infrastructure that can handle millions of requests each day.
+          My expertise in HTML, CSS, JavaScript, TypeScript, NodeJS, ExpressJS, NestJS, Go, MongoDB, ElasticSearch, Docker, Kubernetes, GitHub, and other cutting-edge technologies has enabled me to design and develop highly scalable and reliable systems. I have played a key role in building and maintaining a robust and flexible infrastructure that can handle millions of requests each day.
         </Text>
         <Text>
-          My experience has also allowed me to effectively mentor and lead
-          junior team members, ensuring that they stay up-to-date with the
-          latest industry developments and are well-equipped to handle complex
-          software engineering tasks. Additionally, I have an excellent track
-          record of collaborating with cross-functional teams, ensuring that
-          project goals are met on time.
+          My experience has also allowed me to effectively mentor and lead junior team members, ensuring that they stay up-to-date with the latest industry developments and are well-equipped to handle complex software engineering tasks. Additionally, I have an excellent track record of collaborating with cross-functional teams, ensuring that project goals are met on time.
         </Text>
         <Text>
-          Overall, I am a highly skilled and driven Staff Software Engineer who
-          is passionate about creating innovative solutions to complex problems.
-          I am committed to delivering high-quality work and exceeding the
-          expectations of stakeholders, and I believe that my expertise and
-          experience make me an asset to any team.
+          Overall, I am a highly skilled and driven Senior Staff Software Engineer who is passionate about creating innovative solutions to complex problems. I am committed to delivering high-quality work and exceeding the expectations of stakeholders, and I believe that my expertise and experience make me an asset to any team.
         </Text>
       </CustomListItem>
+
       <CustomListItem
         title="Co-founder"
         label="3R Eventos"
         href="https://www.eventos3r.com.br/"
-        when="2018 - Present"
+        when="Feb 2018 - Jan 2024"
       >
         <Text>
           As an event coordinator, my ultimate goal is to create unforgettable
@@ -96,7 +85,7 @@ export const Career = () => (
         title="Advanced Programmer Analyst"
         label="QAT Global"
         href="https://www.qat.com/"
-        when="2020 - 2021"
+        when="Dec 2020 - Jun 2021"
       >
         <Text>
           As an Advanced Programmer Analyst, I played a critical role in
@@ -111,7 +100,7 @@ export const Career = () => (
         title="Co-founder and Software Engineer"
         label="3r Agência"
         href="https://agencia3r.com.br/"
-        when="2016 - 2020"
+        when="Oct 2016 - Dec 2020"
       >
         <Text>
           As a Co-founder and Software Engineer at 3r Agência, I leveraged my
@@ -130,13 +119,13 @@ export const Career = () => (
         title="Tech Lead @ Database Group"
         label="UNESP - Universidade Estadual Paulista"
         href="https://www.grupogbd.com/PortalGBD/index"
-        when="2016 - 2018"
+        when="Jan 2016 - Apr 2018"
       ></CustomListItem>
       <CustomListItem
         title="Software Engineer @ Database Group"
         label="UNESP - Universidade Estadual Paulista"
         href="https://www.grupogbd.com/PortalGBD/index"
-        when="2014 - 2016"
+        when="Jan 2014 - Dec 2015"
       >
         <Text>
           As Technical Lead and Software Engineer, I managed project teams,
