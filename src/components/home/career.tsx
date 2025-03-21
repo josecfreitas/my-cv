@@ -12,9 +12,14 @@ export const Career = () => (
         title="Senior Staff Software Engineer"
         label="Business Insider"
         href="https://www.businessinsider.com/"
-        when="Jan 2024 - Present"
+        when="Jan 2025 - Present"
       ></CustomListItem>
-
+      <CustomListItem
+        title="Senior Staff Software Engineer"
+        label="Business Insider"
+        href="https://www.businessinsider.com/"
+        when="Jan 2024 - Jan 2025"
+      ></CustomListItem>
       <CustomListItem
         title="Staff Software Engineer"
         label="Business Insider"
@@ -26,20 +31,7 @@ export const Career = () => (
         label="Business Insider"
         href="https://www.businessinsider.com/"
         when="Jul 2021 - Mar 2022"
-      >
-        <Text>
-          As a Senior Staff Software Engineer, I have been a crucial part of a team that powers and supports the world's most-read, most helpful, and most trusted source of service journalism. My extensive experience with a wide range of technologies has enabled me to make a significant contribution to the success of the company.
-        </Text>
-        <Text>
-          My expertise in HTML, CSS, JavaScript, TypeScript, NodeJS, ExpressJS, NestJS, Go, MongoDB, ElasticSearch, Docker, Kubernetes, GitHub, and other cutting-edge technologies has enabled me to design and develop highly scalable and reliable systems. I have played a key role in building and maintaining a robust and flexible infrastructure that can handle millions of requests each day.
-        </Text>
-        <Text>
-          My experience has also allowed me to effectively mentor and lead junior team members, ensuring that they stay up-to-date with the latest industry developments and are well-equipped to handle complex software engineering tasks. Additionally, I have an excellent track record of collaborating with cross-functional teams, ensuring that project goals are met on time.
-        </Text>
-        <Text>
-          Overall, I am a highly skilled and driven Senior Staff Software Engineer who is passionate about creating innovative solutions to complex problems. I am committed to delivering high-quality work and exceeding the expectations of stakeholders, and I believe that my expertise and experience make me an asset to any team.
-        </Text>
-      </CustomListItem>
+      ></CustomListItem>
 
       <CustomListItem
         title="Co-founder"
