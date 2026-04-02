@@ -10,6 +10,7 @@ import { HonorsAwards } from "../components/home/honors-awards";
 import { Languages } from "../components/home/languages";
 import { Links } from "../components/home/links";
 import { Publications } from "../components/home/publications";
+import { Skills } from "../components/home/skills";
 
 interface HomeProps {
   lastUpdate: string;
@@ -46,6 +47,7 @@ export default function Home({ lastUpdate }: HomeProps) {
             <Box>
               <AboutMe />
               <Career />
+              <Skills />
             </Box>
           </Flex>
         </Container>
