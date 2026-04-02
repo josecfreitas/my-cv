@@ -5,11 +5,15 @@ interface FooterProps {
 }
 
 export const Footer = ({ lastUpdate }: FooterProps) => (
-  <Box as="footer" py={8} bgColor="gray.100">
+  <Box as="footer" py={5} borderTop="1px solid" borderColor="resume.line" bg="white">
     <Container>
-      <Flex justifyContent="space-between">
-        <Text>Last updated on {lastUpdate}</Text>
-        <Text>Developed by José Carlos</Text>
+      <Flex justifyContent="space-between" gap={4} flexWrap="wrap">
+        <Text fontSize="sm" color="resume.muted" mt={0}>
+          Last updated on {lastUpdate}
+        </Text>
+        <Text fontSize="sm" color="resume.muted" mt={0}>
+          Designed and developed by José Carlos
+        </Text>
       </Flex>
     </Container>
   </Box>

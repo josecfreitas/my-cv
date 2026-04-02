@@ -30,29 +30,65 @@ export default function Home({ lastUpdate }: HomeProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
-      <Box as="main">
-        <Header />
-
+      <Box as="main" minH="100vh" bg="resume.canvas" py={{ base: 0, md: 10 }}>
         <Container>
-          <Flex gap={{ md: 8 }} flexDir={{ base: "column", md: "row" }}>
-            <Box flex={{ md: "0 0 300px" }}>
-              <Links />
-              <Education />
-              <Certifications />
-              <Publications />
-              <HonorsAwards />
-              <Languages />
+          <Box
+            bg="resume.paper"
+            border="1px solid"
+            borderColor="resume.line"
+            borderRadius={{ base: "none", md: "28px" }}
+            overflow="hidden"
+            boxShadow={{ base: "none", md: "0 28px 80px rgba(40, 29, 16, 0.10)" }}
+            sx={{
+              "@media print": {
+                bg: "white",
+                border: "none",
+                borderRadius: "0",
+                boxShadow: "none",
+              },
+            }}
+          >
+            <Header />
+
+            <Box px={{ base: 6, md: 10 }} py={{ base: 6, md: 8 }}>
+              <Flex gap={{ base: 8, md: 10 }} flexDir={{ base: "column", md: "row" }}>
+                <Box
+                  flex={{ md: "0 0 300px" }}
+                  bg={{ base: "transparent", md: "resume.panel" }}
+                  border={{ base: "none", md: "1px solid" }}
+                  borderColor={{ md: "resume.line" }}
+                  borderRadius={{ base: "none", md: "22px" }}
+                  px={{ base: 0, md: 5 }}
+                  py={{ base: 0, md: 5 }}
+                  alignSelf="flex-start"
+                  sx={{
+                    "@media print": {
+                      bg: "transparent",
+                      border: "none",
+                      borderRadius: "0",
+                      padding: "0",
+                    },
+                  }}
+                >
+                  <Links />
+                  <Education />
+                  <Certifications />
+                  <Publications />
+                  <HonorsAwards />
+                  <Languages />
+                </Box>
+
+                <Box flex="1" minW={0}>
+                  <AboutMe />
+                  <Career />
+                  <Skills />
+                </Box>
+              </Flex>
             </Box>
 
-            <Box>
-              <AboutMe />
-              <Career />
-              <Skills />
-            </Box>
-          </Flex>
+            <Footer lastUpdate={lastUpdate} />
+          </Box>
         </Container>
-
-        <Footer lastUpdate={lastUpdate} />
       </Box>
     </>
   );
