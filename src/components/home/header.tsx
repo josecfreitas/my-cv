@@ -40,7 +40,14 @@ export const Header = () => (
             color="gray.700"
             fontSize={{ base: "sm", md: "md" }}
           >
-            Staff Software Engineer @ Insider, Inc. | Master of Computer Science
+            Staff Software Engineer 3 @ Business Insider
+          </Text>
+          <Text color="gray.700" fontSize={{ base: "sm", md: "md" }} mt={1}>
+            B.Sc. & M.Sc. in Computer Science (UNESP) | MBA in Software
+            Architecture (Full Cycle)
+          </Text>
+          <Text color="gray.600" fontSize={{ base: "sm", md: "md" }} mt={1}>
+            São José do Rio Preto, São Paulo, Brazil
           </Text>
         </Box>
       </Flex>

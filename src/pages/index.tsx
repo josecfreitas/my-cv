@@ -2,15 +2,14 @@ import { Box, Container, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { AboutMe } from "../components/home/about-me";
 import { Career } from "../components/home/career";
+import { Certifications } from "../components/home/certifications";
 import { Education } from "../components/home/education";
 import { Footer } from "../components/home/footer";
 import { Header } from "../components/home/header";
+import { HonorsAwards } from "../components/home/honors-awards";
 import { Languages } from "../components/home/languages";
 import { Links } from "../components/home/links";
-import { OtherSkills } from "../components/home/other-skills";
-import { Projects } from "../components/home/projects";
 import { Publications } from "../components/home/publications";
-import { Skills } from "../components/home/skills";
 
 interface HomeProps {
   lastUpdate: string;
@@ -21,11 +20,11 @@ export default function Home({ lastUpdate }: HomeProps) {
     <>
       <Head>
         <title>
-          José Carlos | Software Engineer | Master of Computer Science
+          José Carlos de Freitas | Staff Software Engineer | B.Sc. & M.Sc. in Computer Science (Unesp) | MBA in Software Architecture (Full Cycle)
         </title>
         <meta
           name="description"
-          content="José Carlos | Software Engineer with a Master's in Computer Science. Experienced in end-to-end project development. Visit my online CV to learn more."
+          content="José Carlos de Freitas is a Staff Software Engineer 3 at Business Insider with B.Sc. and M.Sc. degrees in Computer Science from UNESP and an MBA in Software Architecture from Full Cycle."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.svg" />
@@ -38,16 +37,15 @@ export default function Home({ lastUpdate }: HomeProps) {
             <Box flex={{ md: "0 0 300px" }}>
               <Links />
               <Education />
+              <Certifications />
               <Publications />
+              <HonorsAwards />
               <Languages />
             </Box>
 
             <Box>
               <AboutMe />
               <Career />
-              <Skills />
-              <OtherSkills />
-              <Projects />
             </Box>
           </Flex>
         </Container>

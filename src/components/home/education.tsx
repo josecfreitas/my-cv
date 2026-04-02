@@ -12,6 +12,13 @@ export const Education = () => (
     <List>
       <CustomListItem
         icon={SvgIconEducation2}
+        title="MBA in Software Architecture"
+        label="Full Cycle"
+        href="https://mba.fullcycle.com.br/mba/"
+        when="2023 - 2025"
+      />
+      <CustomListItem
+        icon={SvgIconEducation2}
         title="Master's degree in Computer Science"
         label="UNESP - Universidade Estadual Paulista"
         href="https://www2.unesp.br/"
@@ -23,13 +30,6 @@ export const Education = () => (
         label="UNESP - Universidade Estadual Paulista"
         href="https://www2.unesp.br/"
         when="2013 - 2016"
-      />
-      <CustomListItem
-        icon={SvgIconEducation1}
-        title="200+ Technology Courses"
-        label="Alura"
-        href="https://cursos.alura.com.br/user/josecfreitas"
-        when="2017 - Present"
       />
       <CustomListItem
         icon={SvgIconEducation1}
