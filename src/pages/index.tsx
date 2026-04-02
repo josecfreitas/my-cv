@@ -50,8 +50,27 @@ export default function Home({ lastUpdate }: HomeProps) {
           >
             <Header />
 
-            <Box px={{ base: 6, md: 10 }} py={{ base: 6, md: 8 }}>
-              <Flex gap={{ base: 8, md: 10 }} flexDir={{ base: "column", md: "row" }}>
+            <Box
+              px={{ base: 6, md: 10 }}
+              py={{ base: 6, md: 8 }}
+              sx={{
+                "@media print": {
+                  paddingLeft: "1rem",
+                  paddingRight: "1rem",
+                  paddingTop: "0.8rem",
+                  paddingBottom: "0.4rem",
+                },
+              }}
+            >
+              <Flex
+                gap={{ base: 8, md: 10 }}
+                flexDir={{ base: "column", md: "row" }}
+                sx={{
+                  "@media print": {
+                    gap: "1rem",
+                  },
+                }}
+              >
                 <Box
                   flex={{ md: "0 0 300px" }}
                   bg={{ base: "transparent", md: "resume.panel" }}
@@ -63,10 +82,12 @@ export default function Home({ lastUpdate }: HomeProps) {
                   alignSelf="flex-start"
                   sx={{
                     "@media print": {
+                      flex: "0 0 320px",
                       bg: "transparent",
                       border: "none",
                       borderRadius: "0",
                       padding: "0",
+                      fontSize: "0.92em",
                     },
                   }}
                 >

@@ -29,18 +29,50 @@ export const CustomListItem = ({
   ...rest
 }: CustomListItemProps) => {
   const Title = () => (
-    <Text fontWeight="600" fontSize={{ base: "sm", md: "md" }} lineHeight="1.3" mt={0}>
+    <Text
+      fontWeight="600"
+      fontSize={{ base: "sm", md: "md" }}
+      lineHeight="1.3"
+      mt={0}
+      sx={{
+        "@media print": {
+          fontSize: "0.82rem",
+          lineHeight: 1.2,
+        },
+      }}
+    >
       {title}
     </Text>
   );
   const Label = () => (
-    <Text fontSize="xs" mt={1} color="resume.muted" lineHeight="1.4">
+    <Text
+      fontSize="xs"
+      mt={1}
+      color="resume.muted"
+      lineHeight="1.4"
+      sx={{
+        "@media print": {
+          fontSize: "0.65rem",
+          marginTop: "0.12rem",
+          lineHeight: 1.25,
+        },
+      }}
+    >
       {label}
     </Text>
   );
 
   return (
-    <ListItem my={3} {...rest}>
+    <ListItem
+      my={3}
+      sx={{
+        "@media print": {
+          marginTop: "0.45rem",
+          marginBottom: "0.45rem",
+        },
+      }}
+      {...rest}
+    >
       <Flex
         gap={2}
         alignItems="flex-start"
@@ -80,6 +112,12 @@ export const CustomListItem = ({
             whiteSpace="nowrap"
             flexShrink={0}
             mt={{ base: 0, md: "0.15em" }}
+            sx={{
+              "@media print": {
+                fontSize: "0.62rem",
+                marginTop: "0.08rem",
+              },
+            }}
           >
             {when}
           </Text>
@@ -88,10 +126,30 @@ export const CustomListItem = ({
 
       {children && (
         <>
-          <Box fontSize="sm" mt={2} pl={icon ? 6 : 0} color="resume.muted">
+          <Box
+            fontSize="sm"
+            mt={2}
+            pl={icon ? 6 : 0}
+            color="resume.muted"
+            sx={{
+              "@media print": {
+                fontSize: "0.72rem",
+                marginTop: "0.3rem",
+              },
+            }}
+          >
             {children}
           </Box>
-          <Divider my={4} borderColor="resume.line" />
+          <Divider
+            my={4}
+            borderColor="resume.line"
+            sx={{
+              "@media print": {
+                marginTop: "0.55rem",
+                marginBottom: "0.55rem",
+              },
+            }}
+          />
         </>
       )}
     </ListItem>

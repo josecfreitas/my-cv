@@ -14,6 +14,14 @@ export const SectionTitle = ({ children, ...rest }: SectionTitleProps) => (
     borderBottom="1px solid"
     borderColor="resume.line"
     fontWeight="700"
+    sx={{
+      "@media print": {
+        fontSize: "0.66rem",
+        paddingBottom: "0.32rem",
+        marginBottom: "0.55rem",
+        letterSpacing: "0.16em",
+      },
+    }}
     {...rest}
   >
     {children}
